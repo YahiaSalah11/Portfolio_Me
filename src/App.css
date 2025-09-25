@@ -1,0 +1,530 @@
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  text-decoration: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y:auto; /* Prevent vertical scroll */
+  ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  
+
+}
+
+body {
+  font-family: 'Cascadia Code', 'monospace';
+  line-height: 1.6;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* ===== Navbar ===== */
+.navbardiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  background-color:  rgba(255, 255, 255, 0.101);  /* Solid background for readability */
+  border-radius: 2vw;
+
+}
+
+.navbardiv.hide {
+  transform: translateY(-100%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Default mobile gap */
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  font-size: clamp(0.9vw, 1.2vw, 1.2vw); /* Responsive font size */
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #98a0bf46;
+}
+
+
+
+
+
+
+/* ===== Media Queries ===== */
+/* Tablet (768px+) */
+@media (min-width: 768px) {
+  .navbar {
+    gap: 3rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* Desktop (1024px+) */
+@media (min-width: 1024px) {
+  .navbar {
+    gap: 6rem;
+  }
+}
+
+/* Mobile Menu Alternative (optional) */
+@media (max-width: 500px) { 
+  .navbar {
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 0.5rem;
+    padding: 0.5rem;
+    justify-content: center;
+    
+
+  }
+  
+  .navbar a {
+
+    font-size: 12px;
+    padding: 0.25rem 0.5rem;
+  }
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+  color: white;
+  padding: 60px 20px;
+  border-bottom: 1px solid rgba(193, 99, 99, 0.539);
+  
+}
+
+.MainFirst{
+  margin-top: 5vw;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+
+.MainFirstText {
+  width: 30vw;
+  min-height: 20vw;
+  
+  margin-left: 4vw ;
+  margin-top: 0px;
+  font-size: 2vw; /* Responsive font size */
+
+
+}
+
+.contentP{
+  margin-top: 1vw;
+}
+
+
+
+.WavingAnimations {
+  max-width: 40vw;
+  min-width: 15vw;
+  margin-right: 100px;
+}
+
+.social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+
+
+
+/* Animation and cursor for all icons */
+.social-icons a {
+  transition: color 0.4s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.social-icons a:hover {
+  transform: scale(1.4);
+}
+
+/* Colors and hover complementary */
+
+.icon-github {
+  color: #ffffff;
+}
+
+
+.icon-linkedin {
+  color: #0e76a8;
+}
+
+.icon-instagram {
+  color: #833ab4;
+
+}
+
+
+
+
+.icon-facebook {
+  color: #3b5998;
+}
+
+
+.social-icons a:hover {
+color: white  ;
+}
+
+
+
+
+/* App.css */
+.ContactMeAndDownloadResumeBottons a {
+  display: inline-block;
+  padding: 10px 10px;
+  margin-top: 30px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.6  s ease; 
+ 
+  font-size: 22px;
+}
+
+
+
+.ContactMeAndDownloadResumeBottons a:hover {
+  background-color: rgba(255, 255, 255, 0.533); /* Darker blue on hover */
+  color:rgb(30, 30, 82);
+}
+
+
+
+.MainSecondText{
+  margin-right: 150px;
+  align-items: right;
+}
+
+
+
+
+
+/* App.css */
+
+/* Align the content to the right half of the page */
+.MainSecond {
+  display: flex;
+  justify-content: flex-end; /* Align to the right */
+  width: 100%;
+  margin-top: 100px;
+}
+
+.MainSecondText {
+
+  width: 950px; /* Limit width for text content */
+  margin-right: 20px;
+  margin-top: 120px;
+}
+
+/* Styling for the description text */
+.description-text {
+  margin-bottom: 16px; /* Adds margin bottom */
+}
+
+
+/* Flexbox container for tech icons */
+.tech-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.tech-icons div:hover{
+  color:rgba(255, 255, 255, 0.534);
+  transform: scale(1.2);
+}
+
+
+
+.feature-text {
+  display: flex;
+  margin-bottom: 16px; /* Space between features */
+  font-size: 1rem;
+}
+
+
+.TypingAnimationDiv{
+  margin-right: 0px;
+
+}
+
+.TypingAnimations{
+  width: 700px;
+  margin-bottom: 100px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.education-section {
+  color: white;
+  margin-left: 120px;
+  margin-bottom: 120px;
+}
+
+.education-title {
+  font-size: 54px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+.education-content {
+  display: flex;
+  
+}
+
+.education-logo {
+  width: 300px;
+  height: auto;
+  margin-right: 50px;
+}
+
+.education-details {
+  max-width: 1000px;
+  margin-top: 70px;
+  margin-left: 0px;
+}
+
+.university-name {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.degree {
+  font-size: 26px;
+  margin: 10px 0;
+}
+
+.study-duration {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                Projects Page
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+.projects-section {
+  margin-right: 100px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center; /* optional: center cards vertically in each row */
+}
+
+.project-card {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center text and content inside card */
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background-color: #98a0bf46;
+}
+
+.project-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 16px;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+.project-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+.project-info span {
+  background: #f3f3f329;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+
+
+
+.MoreProjects a{
+  display: inline-block;
+  padding: 14px 14px;
+  margin-top: 80px;
+  background-color: #98a0bf46;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.6s ease, background-color 0.6s ease;
+
+  font-size: 32px;
+}
+
+
+.MoreProjects a:hover{
+  transform: translateY(-10px);
+  background-color: #3e2bac00;
+}
+
+
+
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                               Contact Me
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+.contact-section {
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.contact-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contact-button {
+  font-size: 16px;
+  padding: 10px 20px;
+}
