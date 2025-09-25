@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/MyPortfolio/static/css/main.fd2fcd4e.css",
-    "main.js": "/MyPortfolio/static/js/main.2664d1ed.js",
-    "static/js/453.acca0757.chunk.js": "/MyPortfolio/static/js/453.acca0757.chunk.js",
-    "static/media/Cairo University.png": "/MyPortfolio/static/media/Cairo University.156740c71507dd6197ab.png",
-    "index.html": "/MyPortfolio/index.html",
-    "main.fd2fcd4e.css.map": "/MyPortfolio/static/css/main.fd2fcd4e.css.map",
-    "main.2664d1ed.js.map": "/MyPortfolio/static/js/main.2664d1ed.js.map",
-    "453.acca0757.chunk.js.map": "/MyPortfolio/static/js/453.acca0757.chunk.js.map"
+    "main.css": "/Portfolio_Me/static/css/main.4b1cfe9e.css",
+    "main.js": "/Portfolio_Me/static/js/main.801e789c.js",
+    "static/js/453.acca0757.chunk.js": "/Portfolio_Me/static/js/453.acca0757.chunk.js",
+    "static/media/Cairo University.png": "/Portfolio_Me/static/media/Cairo University.156740c71507dd6197ab.png",
+    "index.html": "/Portfolio_Me/index.html",
+    "main.4b1cfe9e.css.map": "/Portfolio_Me/static/css/main.4b1cfe9e.css.map",
+    "main.801e789c.js.map": "/Portfolio_Me/static/js/main.801e789c.js.map",
+    "453.acca0757.chunk.js.map": "/Portfolio_Me/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd2fcd4e.css",
-    "static/js/main.2664d1ed.js"
+    "static/css/main.4b1cfe9e.css",
+    "static/js/main.801e789c.js"
   ]
 }
